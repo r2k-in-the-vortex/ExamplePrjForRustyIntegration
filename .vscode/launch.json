@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "gdb",
+            "request": "attach",
+            "name": "Attach to gdbserver",
+            "executable": "./testcpplink/main",
+            "target": "rpi5.local:1234",
+            "remote": true,
+            "cwd": "${workspaceRoot}", 
+            "gdbpath": "/usr/bin/gdb",
+        }
+    ]
+}
+

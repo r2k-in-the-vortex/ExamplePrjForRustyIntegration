@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<EtherCATInfo>
+  <!-- Slave 0 -->
+  <Vendor>
+    <Id>2965</Id>
+  </Vendor>
+  <Descriptions>
+    <Devices>
+      <Device>
+        <Type ProductCode="#x00010200" RevisionNo="#x00000001">DIEWU_EtherCAT_DIO_16</Type>
+        <Name><![CDATA[DIEWU EtherCAT-IO (Digital 16-Input/16-Output)]]></Name>
+        <Sm Enable="9" StartAddress="#xf02" ControlByte="#x44" DefaultSize="0" />
+        <Sm Enable="9" StartAddress="#xf03" ControlByte="#x44" DefaultSize="0" />
+        <Sm Enable="1" StartAddress="#x1000" ControlByte="#x0" DefaultSize="0" />
+        <RxPdo Sm="0" Fixed="1" Mandatory="1">
+          <Index>#x1a00</Index>
+          <Name>Byte 0</Name>
+          <Entry>
+            <Index>#x3101</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Output</Name>
+            <DataType>UINT8</DataType>
+          </Entry>
+        </RxPdo>
+        <RxPdo Sm="1" Fixed="1" Mandatory="1">
+          <Index>#x1a01</Index>
+          <Name>Byte 1</Name>
+          <Entry>
+            <Index>#x3101</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Output</Name>
+            <DataType>UINT8</DataType>
+          </Entry>
+        </RxPdo>
+        <TxPdo Sm="2" Fixed="1" Mandatory="1">
+          <Index>#x1600</Index>
+          <Name>Byte 0</Name>
+          <Entry>
+            <Index>#x3001</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Input</Name>
+            <DataType>UINT8</DataType>
+          </Entry>
+        </TxPdo>
+        <TxPdo Sm="2" Fixed="1" Mandatory="1">
+          <Index>#x1601</Index>
+          <Name>Byte 1</Name>
+          <Entry>
+            <Index>#x3001</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>Input</Name>
+            <DataType>UINT8</DataType>
+          </Entry>
+        </TxPdo>
+      </Device>
+    </Devices>
+  </Descriptions>
+</EtherCATInfo>
