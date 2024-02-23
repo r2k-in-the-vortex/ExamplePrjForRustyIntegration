@@ -1,0 +1,10 @@
+{
+    "name": "ExamplePlcObject",
+    "files" : [
+        "src/GVL_HWIO.st",
+        "src/plcobject.st"
+    ],
+    "compile_type" : "Object",
+    "libraries" : [],
+    "output": "ExamplePlcObject.o"
+}
