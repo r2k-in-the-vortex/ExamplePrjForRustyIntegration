@@ -1,8 +1,10 @@
 {
     "name": "ExamplePlcObject",
     "files" : [
+        "src/build/__gluefile.st",
         "src/GVL_HWIO.st",
-        "src/plcobject.st"
+        "src/plcobject.st",
+        "src/S_somestruct.st"
     ],
     "compile_type" : "Object",
     "libraries" : [],

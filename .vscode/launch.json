@@ -6,7 +6,7 @@
             "type": "gdb",
             "request": "attach",
             "name": "Attach to gdbserver",
-            "executable": "./testcpplink/main",
+            "executable": "./testcpplink/build/main",
             "target": "rpi5.local:1234",
             "remote": true,
             "cwd": "${workspaceRoot}", 

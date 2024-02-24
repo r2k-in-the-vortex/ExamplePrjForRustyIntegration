@@ -18,9 +18,9 @@ FUNCTION Config_Run : INT
     VAR_INPUT
         tick : ULINT;
     END_VAR
+    ___CopyInputs();
     PLC();
-    
-    boolean_output := boolean_input;
+    ___CopyOutputs();
 END_FUNCTION
 
 FUNCTION Config_Init : INT
