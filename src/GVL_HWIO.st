@@ -20,3 +20,4 @@ VAR_GLOBAL
 
     testvar             : S_somestruct;
 END_VAR
+

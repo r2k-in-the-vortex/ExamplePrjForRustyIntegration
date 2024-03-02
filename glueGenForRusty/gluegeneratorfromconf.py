@@ -31,8 +31,8 @@ __gluevarsGenerateTemplate = """
 #include <stdint.h>
 extern "C"{{
 {0}
-    extern void Config_Run(unsigned long int tick);
-    extern void Config_Init(void);
+    extern void ___Config_Run(unsigned long int tick);
+    extern void ___Config_Init(void);
 }}
 
 TIME __CURRENT_TIME;
@@ -93,8 +93,8 @@ __cgenerateTemplate = """
 #include <stdint.h>
 extern "C"{{
 {0}
-    extern void Config_Run(unsigned long int tick);
-    extern void Config_Init(void);
+    extern void ___Config_Run(unsigned long int tick);
+    extern void ___Config_Init(void);
 }}
 """
 __generateTemplate = """
